@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack-a-mole</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Whack-a-mole</h1>
+      <div class="status-bar">
+        <div class="score">
+          <h2>
+            Your Score:
+            <span id="score">0</span>
+          </h2>
+        </div>
+        <div class="timer">
+          <h2>
+            Time Left:
+            <span id="time-left">60</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="square" id="1"></div>
+        <div class="square" id="2"></div>
+        <div class="square" id="3"></div>
+        <div class="square" id="4"></div>
+        <div class="square" id="5"></div>
+        <div class="square" id="6"></div>
+        <div class="square" id="7"></div>
+        <div class="square" id="8"></div>
+        <div class="square" id="9"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="left">
+        &copy; 2021
+        <a href="https://nikhilmwarrier.github.io">nikhilmwarrier</a>
+        <a href="https://github.com/nikhilmwarrier/whack-a-mole-js">
+          (Source Code)
+        </a>
+      </div>
+      <div class="right">
+        <a
+          href="javascript:void(0)"
+          onclick="document.body.classList.toggle('dark')"
+        >
+          Toggle Theme
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
